@@ -7,7 +7,7 @@ This project is a simple NodeJS + Express API
 
 ### Clone the repo
 ```sh
-$ git clone project URL
+$ git clone https://github.com/rootlinux2/contact-list-api.git
 ```
 
 ### Install dependencies
