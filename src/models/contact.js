@@ -21,5 +21,5 @@ const ContactSchema = new Schema({
   }
 });
 
-PermissionSchema.plugin(mongoosePaginator);
-export default PermissionSchema;
+ContactSchema.plugin(mongoosePaginator);
+export default ContactSchema;
