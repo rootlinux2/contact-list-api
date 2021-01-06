@@ -7,41 +7,17 @@ const ContactSchema = new Schema({
     type: String,
     required: true
   },
-  details: {
+  address: {
     type: String,
     required: true
   },
-  url: {
+  phone: {
     type: String,
     default: '/'
   },
-  method: {
+  email: {
     type: String,
     default: 'GET'
-  },
-  group: {
-    type: String,
-    default: 'listar'
-  },
-  createdAt: {
-    type: Date,
-    default: new Date()
-  },
-  updatedAt: {
-    type: Date,
-    default: new Date()
-  },
-  deleted: {
-    type: Date,
-    default: null
-  },
-  createdBy: {
-    type: Schema.Types.ObjectId,
-    ref: 'Users'
-  },
-  updatedBy: {
-    type: Schema.Types.ObjectId,
-    ref: 'Users'
   }
 });
 
