@@ -7,7 +7,9 @@ import routes from './src/routes/routes';
 
 const app = express();
 const PORT = 3002;
-const url = 'mongodb://localhost:27017/contacts';
+// const url = 'mongodb://localhost:27017/contacts';
+const url = 'mongodb+srv://contactlist:LFkbGyzMbH6QXoo6@cluster0.tuv3i.mongodb.net/contacts?retryWrites=true&w=majority';
+
 
 const options = {
     useNewUrlParser: true,
