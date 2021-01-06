@@ -13,11 +13,12 @@ const ContactSchema = new Schema({
   },
   phone: {
     type: String,
-    default: '/'
+    default: '+0 000 000 000 00',
+    required: true
   },
   email: {
     type: String,
-    default: 'GET'
+    required: true
   }
 });
 
