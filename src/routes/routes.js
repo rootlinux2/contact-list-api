@@ -1,27 +1,25 @@
   
   import {
-    addNewPermission,
-    getPermissions,
-    getPermission,
-    updatePermission,
-    deletePermission
-  } from '../controllers/permissionController';
-  
+    getContacts,
+    addContact,
+    getContact,
+    updateContact,
+    deleteContact
+  } from '../controllers/contact';
+  import { returnJson } from '../utils';
   
   const routes = app => {
    
-    app.use('/api/permission', authenticationCheck);
     app
-      .route('/api/permission')
-      .get(getPermissions)
-      .post(addNewPermission);
+      .route('/api/contact')
+      .get(getContacts)
+      .post(addContact);
     app
-      .route('/api/permission/:_id')
-      .put(updatePermission)
-      .get(getPermission)
-      .delete(deletePermission);
-    app.route('/api/permission/filters').post(getPermissions);
-    app.use('/api/permission', returnJson);  
+      .route('/api/contact/:_id')
+      .put(updateContact)
+      .get(getContact)
+      .delete(deleteContact);
+    app.use('/api/contact', returnJson);  
   };
   
   export default routes;
