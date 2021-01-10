@@ -4,12 +4,16 @@
     addContact,
     getContact,
     updateContact,
-    deleteContact
+    deleteContact,
+    generateMockData
   } from '../controllers/contact';
   import { returnJson } from '../utils';
   
   const routes = app => {
    
+    app
+      .route('/api/dataGenerator')
+      .get(generateMockData);
     app
       .route('/api/contact')
       .get(getContacts)
