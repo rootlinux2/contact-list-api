@@ -42,3 +42,8 @@ $ curl --location --request POST 'http://localhost:3002/api/contact' \
         }'
 
 ```
+### To Generate Dummy data
+
+```sh
+$ curl --location --request GET 'http://localhost:3002/api/dataGenerator'
+```
