@@ -24,6 +24,7 @@
       .get(getContact)
       .delete(deleteContact);
     app.use('/api/contact', returnJson);  
+    app.use('/api/dataGenerator', returnJson);  
   };
   
   export default routes;
